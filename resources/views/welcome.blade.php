@@ -88,7 +88,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="#">¿Quienes somos?</a>
+                    <a href="/quienesSomos">¿Quienes somos?</a>
                 </div>
             </div>
         </div>

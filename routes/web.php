@@ -20,7 +20,11 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/memoria', function() {
 	return view('memoria');
-});
+})->middleware('auth');
 Route::get('/quienesSomos', function() {
 	return view('aboutUs');
 });
+
+Route::get('/articulos/comoSepararBasura', function() {
+	return view('comoSepararBasura');
+})->middleware('auth');

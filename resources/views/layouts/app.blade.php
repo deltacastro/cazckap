@@ -39,15 +39,25 @@
 				<div class="collapse navbar-collapse" id="app-navbar-collapse">
 					<!-- Left Side Of Navbar -->
 					<ul class="nav navbar-nav">
-						&nbsp;
+						<li><a href="/home">Principal</a></li>
+						<li><a href="/memoria">Memoria</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
+									Articulos <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="/articulos/comoSepararBasura">¿Como Separar la basura?</a></li>
+							</ul>
+						</li>
+						<li><a href="/quienesSomos">¿Quienes Somos?</a></li>
 					</ul>
 
 					<!-- Right Side Of Navbar -->
 					<ul class="nav navbar-nav navbar-right">
 						<!-- Authentication Links -->
 						@guest
-							<li><a class="fontColorRed" href="{{ route('login') }}">Login</a></li>
-							<li><a href="{{ route('register') }}">Register</a></li>
+							<li><a class="fontColorRed" href="{{ route('login') }}">Inciar Sesión</a></li>
+							<li><a href="{{ route('register') }}">Registrarse</a></li>
 						@else
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
@@ -59,7 +69,7 @@
 										<a href="{{ route('logout') }}"
 										onclick="event.preventDefault();
 										document.getElementById('logout-form').submit();">
-										Logout
+										Cerrar Sesión
 									</a>
 
 									<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

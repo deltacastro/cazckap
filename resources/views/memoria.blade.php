@@ -3,25 +3,21 @@
 @section('style')
 
 	<style>
-		#miCanvas{
-			width: 630px;
-			margin: auto;
-		}
 		h1{
 			text-align:center;
 		}
 		#miCanvas{
 			border:dotted 2px yellow;
-			background:green;
+			background:white;
 		}
 	</style>
 
 @endsection
 
 @section('content')
-	<div class="col-md-12 alignCenter">
+	<div class="col-md-6 col-md-offset-3 alignCenter">
 		
-		<h1>Memoria Imágenes CANVAS</h1>
+		<h1>Memorama</h1>
 		<canvas id="miCanvas">
 			Tu navegador no soporta CANVAS
 		</canvas>
@@ -37,7 +33,7 @@
 		var primerCarta = true;
 		var cartaPrimera, cartaSegunda;
 		var colorDelante="yellow";
-		var colorAtras="blue";
+		var colorAtras="yellow";
 		var colorCanvas="green";
 		var inicioX=30;
 		var inicioY=30;
@@ -225,7 +221,7 @@
 			ctx.fillRect(0,480,canvas.width,canvas.height);
 			ctx.font = "bold 40px comic";
 			ctx.fillStyle="black";
-			ctx.fillText("Aciertos: "+String(cartas),canvas.width-220,510);
+			ctx.fillText("Aciertos: "+String(cartas),canvas.width-290,510);
 			ctx.restore();
 		}
 	</script>

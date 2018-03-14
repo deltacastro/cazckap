@@ -9,17 +9,21 @@
                           <!-- Wrapper for slides -->
                           <div class="carousel-inner">
                             <div class="item active">
-                                <img src="{{ asset('/images/general/frontHouse.jpeg') }}" href="http://google.com" alt="Casita =)">
+                              <a href="/memoria">
+                                <img src="{{ asset('/images/general/frontHouse.jpeg') }}" alt="Casita =)">
                                 <div class="carousel-caption">
-                                    <h3 align="center">Casita =)</h3>
+                                    <h3 align="center">Juegos</h3>
                                 </div>
+                              </a>
                             </div>
 
                             <div class="item">
-                                <img src="{{ asset('/images/general/bedroom.jpeg') }}" href="http://google.com" alt="Manten en orden tu recamara =)">
+                              <a href="/articulos/comoSepararBasura">
+                                <img src="{{ asset('/images/general/bedroom.jpeg') }}" alt="Manten en orden tu recamara =)">
                                 <div class="carousel-caption">
-                                    <h3 align="center">Manten limpia tu recamara =9</h3>
+                                    <h3 align="center">¿Como separar la basura?</h3>
                                 </div>
+                              </a>
                             </div>
 
                             <div class="item">

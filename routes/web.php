@@ -21,3 +21,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/memoria', function() {
 	return view('memoria');
 });
+Route::get('/quienesSomos', function() {
+	return view('aboutUs');
+});

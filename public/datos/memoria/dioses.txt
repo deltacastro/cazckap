@@ -1,0 +1,7 @@
+hades1.jpg,hades1.jpg,
+hades2.jpg,hades2.jpg,
+hercules1.jpg,hercules1.jpg,
+poseidon1.jpg,poseidon1.jpg,
+poseidon2.jpg,poseidon2.jpg,
+zeus1.jpg,zeus1.jpg,
+zeus2.jpg,zeus2.jpg

@@ -1,0 +1,7 @@
+klimt.png,klimtTexto.png,
+grito.jpg,gritoTexto.png,
+vanGogh.png,vanGoghTexto.png,
+poseidon1.jpg,poseidonTexto.png,
+hera1.jpg,heraTexto.png,
+afrodita1.png,afroditaTexto.png,
+atenea1.png,ateneaTexto.png

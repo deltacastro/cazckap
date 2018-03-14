@@ -1,0 +1,7 @@
+afrodita1.png,afrodita1.png,
+afrodita2.jpg,afrodita2.jpg,
+atenea1.png,atenea1.png,
+atenea2.jpg,atenea2.jpg,
+atenea3.jpg,atenea3.jpg,
+atenea4.jpg,atenea4.jpg,
+hera1.jpg,hera1.jpg

@@ -21,6 +21,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/memoria', function() {
 	return view('memoria');
 })->middleware('auth');
+Route::get('/test', function() {
+	return view('test');
+});
 Route::get('/quienesSomos', function() {
 	return view('aboutUs');
 });
@@ -28,3 +31,7 @@ Route::get('/quienesSomos', function() {
 Route::get('/articulos/comoSepararBasura', function() {
 	return view('comoSepararBasura');
 })->middleware('auth');
+
+Route::group(['prefix' => 'admin'], function() {
+	Route::resource('pregunta', 'PreguntaController', ['parameters' => ['pregunta']])->middleware('auth');
+});

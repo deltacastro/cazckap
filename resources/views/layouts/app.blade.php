@@ -83,6 +83,46 @@
 			</div>
 		</div>
 	</nav>
+
+	@if (session('success') && is_array(session('success')))
+						<div class="alert alert-success">
+							<ul>
+								@foreach (session('success') as $key => $value)
+									<li>{{ $value }}</li>
+								@endforeach
+							</ul>
+						</div>
+					@elseif (session('success'))
+						<div class="alert alert-success">
+							<ul>
+								<li>{{ session('success') }}</li>
+							</ul>
+						</div>
+					@endif
+					@if (session('warning') && is_array(session('success')))
+						<div class="alert alert-warning">
+							<ul>
+								@foreach (session('warning') as $key => $value)
+									<li>{{ $value }}</li>
+								@endforeach
+							</ul>
+						</div>
+					@elseif (session('warning'))
+						<div class="alert alert-warning">
+							<ul>
+								<li>{{ session('warning') }}</li>
+							</ul>
+						</div>
+					@endif
+					@if ($errors->any())
+						<div class="alert alert-danger">
+							<ul>
+								@foreach ($errors->all() as $error)
+									<li>{{ $error }}</li>
+								@endforeach
+							</ul>
+						</div>
+					@endif
 	<div class="container">
 		@yield('content')
 	</div>

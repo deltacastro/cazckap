@@ -35,3 +35,5 @@ Route::get('/articulos/comoSepararBasura', function() {
 Route::group(['prefix' => 'admin'], function() {
 	Route::resource('pregunta', 'PreguntaController', ['parameters' => ['pregunta']])->middleware('auth');
 });
+
+Route::resource('quiz', 'GameController')->middleware('auth');

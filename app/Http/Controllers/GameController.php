@@ -41,7 +41,7 @@ class GameController extends Controller
     {
         $respuestas = $request['respuesta'];
         $puntos = 0;
-        $segundos = '60';
+        $segundos = $request['time'];
         $user_id = \Auth::id();
         foreach ($respuestas as $pregunta_id => $respuesta_id) {
             $puntos += Respuesta::find($respuesta_id)->correcta;

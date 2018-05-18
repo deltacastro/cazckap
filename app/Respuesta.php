@@ -8,4 +8,6 @@ class Respuesta extends Model
 {
     protected $table = 'respuestas';
     protected $guarded = ['id'];
+
+
 }

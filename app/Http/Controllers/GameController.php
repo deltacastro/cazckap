@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\User;
 use App\Pregunta;
+use App\Respuesta;
+use App\Puntuacion;
 use Illuminate\Http\Request;
 
 class GameController extends Controller
@@ -37,7 +39,20 @@ class GameController extends Controller
      */
     public function store(Request $request)
     {
-        dd('llega');
+        $respuestas = $request['respuesta'];
+        $puntos = 0;
+        $segundos = '60';
+        $user_id = \Auth::id();
+        foreach ($respuestas as $pregunta_id => $respuesta_id) {
+            $puntos += Respuesta::find($respuesta_id)->correcta;
+        }
+        $puntuacion = new Puntuacion;
+        $puntuacion->time = $segundos;
+        $puntuacion->user_id = $user_id;
+        $puntuacion->puntuacion = $puntos;
+        $puntuacion->save();
+        $puntuaciones = Puntuacion::orderByRaw('puntuacion, time DESC')->get();
+        return view('game.finalgame', compact('puntuacion', 'puntuaciones'));
     }
 
     /**

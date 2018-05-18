@@ -9,7 +9,7 @@ class Puntuacion extends Model
     protected $table = 'puntuaciones';
     protected $guarded = ['id'];
 
-    public function usuarios ()
+    public function user ()
     {
     	return $this->belongsTo(User::class);
     }

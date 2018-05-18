@@ -8,7 +8,7 @@
 	<!-- CSRF Token -->
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 
-	<title>{{ config('app.name', 'Laravel') }}</title>
+	<title>{{ config('app.name', "Cazc Ka'p") }}</title>
 
 	<!-- Styles -->
 	<!-- Latest compiled and minified CSS -->
@@ -32,7 +32,7 @@
 
 					<!-- Branding Image -->
 					<a class="navbar-brand fontColorRed" href="{{ url('/') }}">
-						{{ config('app.name', 'Laravel') }}
+						{{ config('app.name', "Cazc Ka'p") }}
 					</a>
 				</div>
 
@@ -41,15 +41,16 @@
 					<ul class="nav navbar-nav">
 						<li><a href="/home">Principal</a></li>
 						<li><a href="/memoria">Memoria</a></li>
+						<li><a href="/quiz">Preguntas</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
-									Articulos <span class="caret"></span>
+									Artículos <span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu">
 								<li><a href="/articulos/comoSepararBasura">¿Como Separar la basura?</a></li>
 							</ul>
 						</li>
-						<li><a href="/quienesSomos">¿Quienes Somos?</a></li>
+						<li><a href="/quienesSomos">¿Quiénes Somos?</a></li>
 					</ul>
 
 					<!-- Right Side Of Navbar -->

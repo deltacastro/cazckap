@@ -6,7 +6,7 @@
 				<label>{{$pregunta->pregunta}}</label>
 				@foreach($pregunta->respuestas()->inRandomOrder()->get() as $respuesta)
 					<div class="radio">
-						<label class="quiz"><input class="" type="radio" name="respuesta[{{$pregunta->id}}]" value="male"> {{$respuesta->respuesta}}</label>
+						<label class="quiz"><input class="" type="radio" name="respuesta[{{$pregunta->id}}]" value="{{$respuesta->id}}"> {{$respuesta->respuesta}}</label>
 					</div>
 				@endforeach
 				

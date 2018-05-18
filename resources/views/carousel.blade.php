@@ -21,7 +21,7 @@
                               <a href="/articulos/comoSepararBasura">
                                 <img src="{{ asset('/images/general/bedroom.jpeg') }}" alt="Manten en orden tu recamara =)">
                                 <div class="carousel-caption">
-                                    <h3 align="center">¿Como separar la basura?</h3>
+                                    <h3 align="center">¿Cómo separar la basura?</h3>
                                 </div>
                               </a>
                             </div>

@@ -2,10 +2,10 @@
 <div class="col-md-8 col-md-offset-2">
 	<article>
 	<p>
-		Cuidar el medio ambienté no requiere grandes acciones, sino que desde tu
+		Cuidar el medio ambiente no requiere grandes acciones, sino que desde tu
 		propia casa puedes hacer muchos pequeños gestos para contribuir a su
 		protección. <br>
-		La idea es que te conciencies tú y que enseñes a tus Amigos principios y
+		La idea es que aprendas y que enseñes a tus Amigos principios y
 		valores para cuidar el planeta en el que viven, los animales, los árboles y las
 		plantas y todos los recursos naturales.
 	</p>

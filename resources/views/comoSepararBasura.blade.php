@@ -28,7 +28,7 @@
 	<ul>
 		<li>Se identifican con el color verde</li>
 		<li>
-			Son los residuos sólidos biodegradables, es decor. que se descomponen gracias a la acción de
+			Son los residuos sólidos biodegradables, es decir, que se descomponen gracias a la acción de
 			microorganismos, y con ellos se puede elaborar composta.
 		</li>
 	</ul>
